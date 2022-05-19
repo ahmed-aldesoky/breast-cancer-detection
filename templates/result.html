@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {%block body%}
+
+<div id="body" class="runningsinglepost">
+    <div>
+        <h1>The Result</h1>
+        <img src="/static/images/result.png" alt="">
+        <h3><span>you are .</span></h3>
+        {%if data == "B"%}
+        <h3 style="font-size: xx-large; color: crimson;">Benign</h3>
+        {%else%}
+        <h3 style="font-size: xx-large;color: crimson;">Malignant</h3>
+        {%endif%}
+        <br><br>
+
+
+    </div>
+</div>
+{%endblock%}

@@ -1,0 +1,83 @@
+ {% extends 'base.html' %} {%block body%}
+
+<div id="body" class="running">
+    <div>
+        <h1>Detection</h1>
+        <ul class="gallery">
+            <li>
+                <img src="/static/images/de2.png " alt="">
+            </li>
+            <li>
+                <img src="/static/images/de1.png" alt="">
+            </li>
+            <li>
+                <img src="/static/images/de3.png" alt="">
+            </li>
+        </ul>
+        <h3><span>please enter your record</span></h3>
+        <form method="POST" action="{{url_for('result')}}">
+            <br><label for="lname">radius_mean</label>
+            <input type="text" name="radius_mean" value=0>
+            <br><label for="lname">texture_mean</label>
+            <input type="text" name="texture_mean" value=0>
+            <br><label for="lname">perimeter_mean</label>
+            <input type="text" name="perimeter_mean" value=0>
+            <br><label for="lname">area_mean</label>
+            <input type="text" name="area_mean" value=0>
+            <br><label for="lname">smoothness_mean</label>
+            <input type="text" name="smoothness_mean" value=0>
+            <br><label for="lname">compactness_mean</label>
+            <input type="text" name="compactness_mean" value=0>
+            <br><label for="lname">concavity_mean</label>
+            <input type="text" name="concavity_mean" value=0>
+            <br><label for="lname">concave points_mean</label>
+            <input type="text" name="concave points_mean" value=0>
+            <br><label for="lname">symmetry_mean</label>
+            <input type="text" name="symmetry_mean" value=0>
+            <br><label for="lname">fractal_dimension_mean</label>
+            <input type="text" name="fractal_dimension_mean" value=0>
+            <br><label for="lname">radius_se</label>
+            <input type="text" name="radius_se" value=0>
+            <br><label for="lname">texture_se</label>
+            <input type="text" name="texture_se" value=0>
+            <br><label for="lname">perimeter_se</label>
+            <input type="text" name="perimeter_se" value=0>
+            <br><label for="lname">area_se</label>
+            <input type="text" name="area_se" value=0>
+            <br><label for="lname">smoothness_se</label>
+            <input type="text" name="smoothness_se" value=0>
+            <br><label for="lname">compactness_se</label>
+            <input type="text" name="compactness_se" value=0>
+            <br><label for="lname">concavity_se</label>
+            <input type="text" name="concavity_se" value=0>
+            <br><label for="lname">concave points_se</label>
+            <input type="text" name="concave points_se" value=0>
+            <br><label for="lname">symmetry_se</label>
+            <input type="text" name="symmetry_se" value=0>
+            <br><label for="lname">fractal_dimension_se</label>
+            <input type="text" name="fractal_dimension_se" value=0>
+            <br><label for="lname">radius_worst</label>
+            <input type="text" name="radius_worst" value=0>
+            <br><label for="lname">texture_worst</label>
+            <input type="text" name="texture_worst" value=0>
+            <br><label for="lname">perimeter_worst</label>
+            <input type="text" name="perimeter_worst" value=0>
+            <br><label for="lname">area_worst</label>
+            <input type="text" name="area_worst" value=0>
+            <br><label for="lname">smoothness_worst</label>
+            <input type="text" name="smoothness_worst" value=0>
+            <br><label for="lname">compactness_worst</label>
+            <input type="text" name="compactness_worst" value=0>
+            <br><label for="lname">concavity_worst</label>
+            <input type="text" name="concavity_worst" value=0>
+            <br><label for="lname">concave points_worst</label>
+            <input type="text" name="concave points_worst" value=0>
+            <br><label for="lname">symmetry_worst</label>
+            <input type="text" name="symmetry_worst" value=0>
+            <br><label for="lname">fractal_dimension_worst</label>
+            <input type="text" name="fractal_dimension_worst" value=0>
+            <br><br><br><input type="submit" value="Send" id="submit">
+        </form>
+    </div>
+</div>
+{%endblock%}
